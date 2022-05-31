@@ -1,7 +1,4 @@
 import requests
-import arrow
-
-
 
 response = requests.get(
   'https://api.stormglass.io/v2/weather/point',
@@ -17,5 +14,5 @@ response = requests.get(
 
 # Do something with response data.
 json_data = response.json()
-print(response.headers)
 print(json_data)
+
