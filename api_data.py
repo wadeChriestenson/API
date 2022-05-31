@@ -11,7 +11,7 @@ response = requests.get(
     'params': ','.join(['windSpeed', 'airTemperature']),
   },
   headers={
-    'Authorization': 'd52bbf16-e10e-11ec-becb-0242ac130002-d52bbf84-e10e-11ec-becb-0242ac130002'
+    'Authorization': '<your-stromglass_api_key>'
   }
 )
 
@@ -19,5 +19,3 @@ response = requests.get(
 json_data = response.json()
 print(response.headers)
 print(json_data)
-
-# api_key = 'd52bbf16-e10e-11ec-becb-0242ac130002-d52bbf84-e10e-11ec-becb-0242ac130002'
